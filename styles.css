@@ -1,17 +1,97 @@
 * {
-  margin:0px;
-  padding:0px;
+	margin: 0px;
+	padding: 0px;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+	background: #e74c3c;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+form {
+	height: auto;
+	width: 50%;
+	margin: 50px 25%;
+}
+
+p#msg {
+	display: block;
+	position: relative;
+	height: 30px;
+	max-width: 630px;
+	margin: 0 auto;
+	padding: 0;
+	line-height: 30px;
+	font-size: 30px;
+	font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+}
+
+input.nameIn {
+	display: inline;
+	position: relative;
+	top: -3px;
+	height: 17px;
+	width: 40px;
+	vertical-align: middle;
+	line-height: 30px;
+	margin: auto 0;
+	padding: 0;
+	border: 1px solid white;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.button {
+	display: inline;
+	position: relative;
+	top: -4px;
+	height: 30px;
+	width: 40px;
+	margin: 0 auto;
+	border: 0;
+	padding: 0;
+	line-height: 30px;
+	color: white;
+	background: #c0392b;
+}
+
+.button:hover { background: #A5281B; }
+
+.container {
+	background: #e74c3c;
+	min-height: 100%;
+}
+
+.modal > .content { margin: 20px; }
+
+.modal > .content > div > .button {
+	top: 0px;
+	margin: 10px auto;
+	display: block;
+}
+
+.modal {
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	height: auto;
+	min-width: 320px;
+	width: 50%;
+	max-width: 630px;
+	border: 1px solid white;
+	background: #e74c3c;
+	z-index: 2000;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(69, 22, 18, 0.4);
+	z-index: 1000;
 }
